@@ -1,0 +1,289 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>What's next...</title>
+		<script type="application/javascript" src="libraries/requirejs/require.js" data-main="scripts/main.js"></script>
+		<script type="application/javascript" src="libraries/jquery/jquery.min.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="styles/theme.css" />
+
+		<link rel="stylesheet" href="slider/css/anythingslider.css">
+		<link rel="stylesheet" href="slider/css/theme-polished.css">
+		<script src="slider/js/jquery.anythingslider.js"></script>
+
+		<!-- AnythingSlider optional extensions -->
+		<script src="slider/js/jquery.anythingslider.fx.js"></script>
+		<script src="slider/js/jquery.anythingslider.video.js"></script>
+
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lato:700,300,400' rel='stylesheet' type='text/css'>
+
+	</head>
+	<body>
+		<div class="header">
+			What's Next...
+		</div>
+		<div class="main">
+			<div class="topcontent">
+				<div class="topcontent-container" id="Curiosity"><div class="mission-container">
+					<div class="left">
+					<h1>Curiosity<span>x</span></h1>
+
+					<ul id="slider-images" class="anythingSlider-polished">
+					<li>
+					<img src="mission-images/curiosity-1.jpg" />
+					</li>
+					<li>
+					<img src="mission-images/curiosity-2.jpg" />
+					</li>
+					<li>
+					<img src="mission-images/curiosity-3.jpg" />
+					</li>
+					</ul>
+					</div>
+
+					<div class="middle">
+					<h3>Key mission stats</h3>
+
+					<ul>
+					<li>Launch date: November 26th 2011</li>
+					<li>Launch site: Cape Canaveral, Florida</li>
+					<li>Agency: NASA</li>
+					<li>Mode: Lander/Rover</li>
+					</ul>
+					</div>
+
+					<div class="right">
+					<ul id="slider-factoids" class="anythingSlider-polished">
+					<li>
+					<div>Curiosity was lowered to the surface from the descent system by a "skycrane"  with a 20m tether.</div>
+					</li>
+					<li>
+					<div>Curiosity's mission includes assessing conditions in Gale Crater to determine whether it was ever able to support life.</div>
+					</li>
+					<li>
+					<div><a href="http://www.nasa.gov/mission_pages/msl/multimedia/gallery-indexEvents.html#.U0pcW3VdV2M" target="_blank">Images from the mission on the MSL mission page</a></div>
+					</li>
+					<li>
+					<div>No. 1 single during launch week: <A href="https://www.youtube.com/watch?v=tg00YEETFzg" target="_blank">Rihanna ft. Calvin Harris - We Found Love</a></div>
+					</li>
+					</ul>
+					</div>
+					</div>
+				</div>
+				<div class="topcontent-container" id="Mariner_4"><div class="mission-container">
+					<div class="left">
+					<h1>Mariner 4<span>x</span></h1>
+
+					<ul id="slider-images" class="anythingSlider-polished">
+					<li>
+					<img src="mission-images/mariner4-1.jpg" />
+					</li>
+					<li>
+					<img src="mission-images/mariner4-2.jpg" />
+					</li>
+					<li>
+					<img src="mission-images/mariner4-3.jpg" />
+					</li>
+					</ul>
+					</div>
+
+					<div class="middle">
+					<h3>Key mission stats</h3>
+
+					<ul>
+					<li>Launch date: November 28th 1964</li>
+					<li>Launch site: Cape Canaveral, Florida</li>
+					<li>Agency: NASA</li>
+					<li>Mode: Flyby</li>
+					</ul>
+					</div>
+
+					<div class="right">
+					<ul id="slider-factoids" class="anythingSlider-polished">
+					<li>
+					<div>Mariner 4 captured the first 21 images of the Martian surface.</div>
+					</li>
+					<li>
+					<div>It was the first space probe to use the stars for navigation.</div>
+					</li>
+					<li>
+					<div><a href="http://nssdc.gsfc.nasa.gov/imgcat/html/mission_page/MR_Mariner_4_page1.html" target="_blank">Images from the mission at NSSDC</a></div>
+					</li>
+					<li>
+					<div>No. 1 single during launch week: <A href="https://www.youtube.com/watch?v=OfJVeHKVcE8" target="_blank">Rolling Stones - Little Red Rooster</a></div>
+					</li>
+					</ul>
+					</div>
+					</div>
+				</div>
+					<script type="text/javascript">
+					$('#slider-images, #slider-factoids')
+					 .anythingSlider({
+					   // Appearance
+					   theme               : "polished", // Theme name
+					   mode                : "horiz",   // Set mode to "horizontal", "vertical" or "fade" (only first letter needed); replaces vertical option
+					   expand              : false	,     // If true, the entire slider will expand to fit the parent element
+					   resizeContents      : false,      // If true, solitary images/objects in the panel will expand to fit the viewport
+					   aspectRatio         : null,      // Valid values: null, true, a float e.g. 1.5 (or as 3/2) or a ratio in a string e.g. '3:2'
+					   showMultiple        : false,     // Set this value to a number and it will show that many slides at once
+					   easing              : "swing",   // Anything other than "linear" or "swing" requires the easing plugin or jQuery UI
+
+					   buildArrows         : false,      // If true, builds the forwards and backwards buttons
+					   buildNavigation     : true,      // If true, builds a list of anchor links to link to each panel
+					   buildStartStop      : false,      // If true, builds the start/stop button and adds slideshow functionality
+
+					   appendForwardTo     : null,      // Append forward arrow to a HTML element (jQuery Object, selector or HTMLNode), if not null
+					   appendBackTo        : null,      // Append back arrow to a HTML element (jQuery Object, selector or HTMLNode), if not null
+					   appendControlsTo    : null,      // Append controls (navigation + start-stop) to a HTML element (jQuery Object, selector or HTMLNode), if not null
+					   appendNavigationTo  : null,      // Append navigation buttons to a HTML element (jQuery Object, selector or HTMLNode), if not null
+					   appendStartStopTo   : null,      // Append start-stop button to a HTML element (jQuery Object, selector or HTMLNode), if not null
+
+					   toggleArrows        : false,     // If true, side navigation arrows will slide out on hovering & hide @ other times
+					   toggleControls      : false,     // if true, slide in controls (navigation + play/stop button) on hover and slide change, hide @ other times
+
+					   startText           : "Start",   // Start button text
+					   stopText            : "Stop",    // Stop button text
+					   forwardText         : "&raquo;", // Link text used to move the slider forward (hidden by CSS, replaced with arrow image)
+					   backText            : "&laquo;", // Link text used to move the slider back (hidden by CSS, replace with arrow image)
+					   tooltipClass        : "tooltip", // Class added to navigation & start/stop button (text copied to title if it is hidden by a negative text indent)
+
+					   // Function
+					   enableArrows        : true,      // if false, arrows will be visible, but not clickable.
+					   enableNavigation    : false,      // if false, navigation links will still be visible, but not clickable.
+					   enableStartStop     : true,      // if false, the play/stop button will still be visible, but not clickable. Previously "enablePlay"
+					   enableKeyboard      : true,      // if false, keyboard arrow keys will not work for this slider.
+
+					   // Navigation
+					   startPanel          : 1,         // This sets the initial panel
+					   changeBy            : 1,         // Amount to go forward or back when changing panels.
+					   hashTags            : true,      // Should links change the hashtag in the URL?
+					   infiniteSlides      : true,      // if false, the slider will not wrap & not clone any panels
+					   navigationFormatter : null,      // Details at the top of the file on this use (advanced use)
+					   navigationSize      : false,     // Set this to the maximum number of visible navigation tabs; false to disable
+
+					   // Slideshow options
+					   autoPlay            : true,     // If true, the slideshow will start running; replaces "startStopped" option
+					   autoPlayLocked      : false,     // If true, user changing slides will not stop the slideshow
+					   autoPlayDelayed     : false,     // If true, starting a slideshow will delay advancing slides; if false, the slider will immediately advance to the next slide when slideshow starts
+					   pauseOnHover        : true,      // If true & the slideshow is active, the slideshow will pause on hover
+					   stopAtEnd           : false,     // If true & the slideshow is active, the slideshow will stop on the last page. This also stops the rewind effect when infiniteSlides is false.
+					   playRtl             : false,     // If true, the slideshow will move right-to-left
+
+					   // Times
+					   delay               : 5000,      // How long between slideshow transitions in AutoPlay mode (in milliseconds)
+					   resumeDelay         : 15000,     // Resume slideshow after user interaction, only if autoplayLocked is true (in milliseconds).
+					   animationTime       : 600,       // How long the slideshow transition takes (in milliseconds)
+					   delayBeforeAnimate  : 0,         // How long to pause slide animation before going to the desired slide (used if you want your "out" FX to show).
+
+					   // Interactivity
+					   clickForwardArrow   : "click",         // Event used to activate forward arrow functionality (e.g. add jQuery mobile's "swiperight")
+					   clickBackArrow      : "click",         // Event used to activate back arrow functionality (e.g. add jQuery mobile's "swipeleft")
+					   clickControls       : "click focusin", // Events used to activate navigation control functionality
+					   clickSlideshow      : "click",         // Event used to activate slideshow play/stop button
+					   allowRapidChange    : false,           // If true, allow rapid changing of the active pane, instead of ignoring activity during animation
+
+					 });
+
+
+					</script>
+
+			</div>
+			<div class="canvasContainer">
+				<div class="decreaseBounds"><div>&lt;&lt;<div id="zoomin">Zoom In</div></div></div>
+				<canvas id="canvas" width="1260" height="300"></canvas>
+				<div class="increaseBounds"><div>&gt;&gt;<div id="zoomout">Zoom Out</div></div></div>
+			</div>
+			<div class="timeline">
+				<h2>Successful Missions<span>x</span></h2>
+				<div class="timeline-container">
+				<ul class="timeline">
+				<li class="timeline-mission" id="timeline-mars1" ref="Mars 1">
+				<div class="timeline-popout soviet">
+				Марс-1<br/>1962
+				</div>
+				</li>
+				<li class="timeline-mission" id="timeline-mariner4" ref="Mariner 4">
+				<div class="timeline-popout nasa">
+				Mariner 4<br/>1964
+				</div>
+				</li>
+				<li class="timeline-mission" id="timeline-mariner6" ref="Mariner 6">
+				<div class="timeline-popout nasa">
+				Mariner 6<br/>1969
+				</div>
+				</li>
+				<li class="timeline-mission" id="timeline-mariner7" ref="Mariner 7">
+				<div class="timeline-popout nasa">
+				Mariner 7<br/>1969
+				</div>
+				</li>
+				<li class="timeline-mission" id="timeline-mariner9" ref="Mariner 9">
+				<div class="timeline-popout nasa">
+				Mariner 9<br/>1971
+				</div>
+				</li>
+				<li class="timeline-mission" id="timeline-viking1" ref="Viking 1">
+				<div class="timeline-popout nasa">
+				Viking 1<br/>1975
+				</div>
+				</li>
+				<li class="timeline-mission" id="timeline-viking2" ref="Viking 2">
+				<div class="timeline-popout nasa">
+				Viking 2<br/>1975
+				</div>
+				</li>
+				<li class="timeline-mission" id="timeline-globalsurveyor" ref="Mars Global Surveyor">
+				<div class="timeline-popout nasa">
+				Mars Global Surveyor<br/>1996
+				</div>
+				</li>
+				<li class="timeline-mission" id="timeline-pathfinder" ref="Pathfinder">
+				<div class="timeline-popout nasa">
+				Pathfinder<br/>1996
+				</div>
+				</li>
+				<li class="timeline-mission" id="timeline-odyssey" ref="Odyssey">
+				<div class="timeline-popout nasa">
+				Odyssey<br/>2001
+				</div>
+				</li>
+				<li class="timeline-mission" id="timeline-marsexpress" ref="Mars Express">
+				<div class="timeline-popout esa">
+				Mars Express<br/>2003
+				</div>
+				</li>
+				<li class="timeline-mission" id="timeline-spirit" ref="Spirit">
+				<div class="timeline-popout nasa">
+				Spirit<br/>2003
+				</div>
+				</li>
+				<li class="timeline-mission" id="timeline-opportunity" ref="Opportunity">
+				<div class="timeline-popout nasa">
+				Opportunity<br/>2003
+				</div>
+				</li>
+				<li class="timeline-mission" id="timeline-mro" ref="MRO">
+				<div class="timeline-popout nasa">
+				<span style="font-size:18px">Mars Reconnaissance Orbiter</span><br />2005
+				</div>
+				</li>
+				<li class="timeline-mission" id="timeline-phoenix" ref="Phoenix">
+				<div class="timeline-popout nasa">
+				Phoenix<br/>2007
+				</div>
+				</li>
+				<li class="timeline-mission" id="timeline-curiosity" ref="Curiosity">
+				<div class="timeline-popout nasa" style="width:140px">
+				Curiosity<br/>2011
+				</div>
+				</li>
+				</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			All code and content licensed under <a href="http://opensource.org/licenses/MIT">MIT license</a>. Enjoy, from everyone at <a href="https://2014.spaceappschallenge.org/projects/whats-next/">Space apps York</a>
+		</div>
+	</body>
+</html>
