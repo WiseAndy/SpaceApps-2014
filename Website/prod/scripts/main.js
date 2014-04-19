@@ -32,11 +32,7 @@ require(['planetData', 'timeline','whatsnext', 'mustache'], function(planetData,
     $('.timeline-mission').click(function(){
       openInfoPanel($(this).attr('ref'));
     });
-    $('.topcontent h1 span').click(function(){
-      $('.topcontent-container').animate({height: '0px'});
-      currentMission = null;
-      render();
-    })
+
     //----------------
 
     var drawingWidth = 0.6;
@@ -267,7 +263,14 @@ require(['planetData', 'timeline','whatsnext', 'mustache'], function(planetData,
            allowRapidChange    : false,           // If true, allow rapid changing of the active pane, instead of ignoring activity during animation
 
          });
-        $('.topcontent-container').animate({height: '285px'})
+         $('#infopanelclosebutton').click(function(){
+           $('.topcontent-container').css({height: '0px'});
+           $('.header').show();
+           currentMission = null;
+           render();
+         });
+         $('.header').hide()
+        $('.topcontent-container').css({height: '285px'})
         render();
       });
     }

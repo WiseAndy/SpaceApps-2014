@@ -104,9 +104,14 @@ body {
   .topcontent #slider-factoids div a:hover, .topcontent #slider-factoids div a:focus {
     color: #39cccc; }
   .topcontent .right {
-    background-image: url("nasa-logo.png");
     background-repeat: no-repeat;
     background-position: right bottom; }
+    .topcontent .right .Nasa {
+      background-image: url("nasa-logo.png"); }
+    .topcontent .right .USSR {
+      background-image: url("ussr-logo.png"); }
+    .topcontent .right .ESA {
+      background-image: url("esa-logo.png"); }
   .topcontent .anythingSlider-polished.activeSlider .anythingWindow {
     border-top: none !important;
     border-bottom: none !important; }

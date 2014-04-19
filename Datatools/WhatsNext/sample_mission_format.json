@@ -1,0 +1,41 @@
+missions: [
+  {
+    name: "Mariner 4",
+    year: "1964",
+    agency: "NASA",
+    launch_site:  "Cape Canaveral",
+    type: "Flyby",
+    earth_weight: 260.8,
+    size: "metal frame 127 cm across a diagonal and 45.7 cm high; solar panels end-to-end span of 6.88 meters; total 2.89 m high",
+    key_images: [
+      "http://nssdc.gsfc.nasa.gov/imgcat/hires/m04_01d.gif",
+      "http://nssdc.gsfc.nasa.gov/image/spacecraft/mariner04.gif"
+    ],
+    images: [
+      "http://nssdc.gsfc.nasa.gov/imgcat/html/mission_page/MR_Mariner_4_page1.html"
+    ],
+    key_findings: [
+      "First images of Martian surface",
+      "Interplanetary magnetic field data",
+      "Radiation data",
+      "Solar flux",
+      "Automatic star based navigation"
+    ],
+    enabling_technologies: [
+      "Star navigation for sense of direction locking on either the Sun, Earth, Mars or the star Canopus (second brightest star in the night sky)",
+      "Tape recorder for data storage with 634 KB"
+    ],
+    problems: [
+      "Plasma probe had its performance degraded by a resistor failure",
+      "Lock on Canopus lost multiple times due to particles released from the space craft driftin by the sensor",
+      "Hits by micrometeors"
+    ],
+    start_date: 1964-11-28,
+    end_date: 1967-12-21,
+    sister_missions: [
+      "Mariner 3"
+    ],
+    related_missions: [],
+    music: "Little Red Rooster - The Rolling Stones"
+  }
+]

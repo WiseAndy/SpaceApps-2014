@@ -26,18 +26,14 @@
 		<script id="infoPanelTemplate" type="text/template">
 		<div class="topcontent-container" id="{{name}}"><div class="mission-container">
 			<div class="left">
-			<h1>{{name}}<span>x</span></h1>
+			<h1>{{name}}<span id="infopanelclosebutton">x</span></h1>
 
 			<ul id="slider-images" class="anythingSlider-polished">
+			{{#key_images}}
 			<li>
-			<img src="mission-images/curiosity-1.jpg" />
+			<img src="{{.}}" />
 			</li>
-			<li>
-			<img src="mission-images/curiosity-2.jpg" />
-			</li>
-			<li>
-			<img src="mission-images/curiosity-3.jpg" />
-			</li>
+			{{/key_images}}
 			</ul>
 			</div>
 
@@ -45,27 +41,20 @@
 			<h3>Key mission stats</h3>
 
 			<ul>
-			<li>Launch date: {{start_date}}</li>
+			<li>Launch date: {{launch_date}}</li>
 			<li>Launch site: {{launch_site}}</li>
 			<li>Agency: {{agency}}</li>
-			<li>Mode: {{type}}</li>
+			<li>Mode: {{mode}}</li>
 			</ul>
 			</div>
 
-			<div class="right">
+			<div class="right {{agency}}">
 			<ul id="slider-factoids" class="anythingSlider-polished">
+			{{#factoids}}
 			<li>
-			<div>Curiosity was lowered to the surface from the descent system by a "skycrane"  with a 20m tether.</div>
+				<div>{{{.}}}</div>
 			</li>
-			<li>
-			<div>Curiositys mission includes assessing conditions in Gale Crater to determine whether it was ever able to support life.</div>
-			</li>
-			<li>
-			<div><a href="http://www.nasa.gov/mission_pages/msl/multimedia/gallery-indexEvents.html#.U0pcW3VdV2M" target="_blank">Images from the mission on the MSL mission page</a></div>
-			</li>
-			<li>
-			<div>No. 1 single during launch week: <A href="https://www.youtube.com/watch?v=tg00YEETFzg" target="_blank">Rihanna ft. Calvin Harris - We Found Love</a></div>
-			</li>
+			{{/factoids}}
 			</ul>
 			</div>
 			</div>
@@ -73,52 +62,7 @@
 		</script>
 		<div class="main">
 			<div class="topcontent">
-				<div class="topcontent-container" id="Mariner_4"><div class="mission-container">
-					<div class="left">
-					<h1>Mariner 4<span>x</span></h1>
-
-					<ul id="slider-images" class="anythingSlider-polished">
-					<li>
-					<img src="mission-images/mariner4-1.jpg" />
-					</li>
-					<li>
-					<img src="mission-images/mariner4-2.jpg" />
-					</li>
-					<li>
-					<img src="mission-images/mariner4-3.jpg" />
-					</li>
-					</ul>
-					</div>
-
-					<div class="middle">
-					<h3>Key mission stats</h3>
-
-					<ul>
-					<li>Launch date: November 28th 1964</li>
-					<li>Launch site: Cape Canaveral, Florida</li>
-					<li>Agency: NASA</li>
-					<li>Mode: Flyby</li>
-					</ul>
-					</div>
-
-					<div class="right">
-					<ul id="slider-factoids" class="anythingSlider-polished">
-					<li>
-					<div>Mariner 4 captured the first 21 images of the Martian surface.</div>
-					</li>
-					<li>
-					<div>It was the first space probe to use the stars for navigation.</div>
-					</li>
-					<li>
-					<div><a href="http://nssdc.gsfc.nasa.gov/imgcat/html/mission_page/MR_Mariner_4_page1.html" target="_blank">Images from the mission at NSSDC</a></div>
-					</li>
-					<li>
-					<div>No. 1 single during launch week: <A href="https://www.youtube.com/watch?v=OfJVeHKVcE8" target="_blank">Rolling Stones - Little Red Rooster</a></div>
-					</li>
-					</ul>
-					</div>
-					</div>
-				</div>
+				<div class="topcontent-container"></div>
 			</div>
 			<div class="canvasContainer">
 				<div class="decreaseBounds"><div>&lt;&lt;<div id="zoomin">Zoom In</div></div></div>
@@ -129,7 +73,7 @@
 				<h2>Successful Missions<span>x</span></h2>
 				<div class="timeline-container">
 				<ul class="timeline">
-				<li class="timeline-mission" id="timeline-mars1" ref="Mars 1">
+				<li class="timeline-mission" id="timeline-mars1" ref="Mars-1">
 				<div class="timeline-popout soviet">
 				Марс-1<br/>1962
 				</div>
@@ -139,12 +83,12 @@
 				Mariner 4<br/>1964
 				</div>
 				</li>
-				<li class="timeline-mission" id="timeline-mariner6" ref="Mariner 6">
+				<li class="timeline-mission" id="timeline-mariner6" ref="Mariner 6 &amp; 7">
 				<div class="timeline-popout nasa">
 				Mariner 6<br/>1969
 				</div>
 				</li>
-				<li class="timeline-mission" id="timeline-mariner7" ref="Mariner 7">
+				<li class="timeline-mission" id="timeline-mariner7" ref="Mariner 6 &amp; 7">
 				<div class="timeline-popout nasa">
 				Mariner 7<br/>1969
 				</div>
@@ -154,12 +98,12 @@
 				Mariner 9<br/>1971
 				</div>
 				</li>
-				<li class="timeline-mission" id="timeline-viking1" ref="Viking 1">
+				<li class="timeline-mission" id="timeline-viking1" ref="Viking 1 &amp; 2">
 				<div class="timeline-popout nasa">
 				Viking 1<br/>1975
 				</div>
 				</li>
-				<li class="timeline-mission" id="timeline-viking2" ref="Viking 2">
+				<li class="timeline-mission" id="timeline-viking2" ref="Viking 1 &amp; 2">
 				<div class="timeline-popout nasa">
 				Viking 2<br/>1975
 				</div>
@@ -184,12 +128,12 @@
 				Mars Express<br/>2003
 				</div>
 				</li>
-				<li class="timeline-mission" id="timeline-spirit" ref="Spirit">
+				<li class="timeline-mission" id="timeline-spirit" ref="Spirit &amp; Opportunity">
 				<div class="timeline-popout nasa">
 				Spirit<br/>2003
 				</div>
 				</li>
-				<li class="timeline-mission" id="timeline-opportunity" ref="Opportunity">
+				<li class="timeline-mission" id="timeline-opportunity" ref="Spirit &amp; Opportunity">
 				<div class="timeline-popout nasa">
 				Opportunity<br/>2003
 				</div>

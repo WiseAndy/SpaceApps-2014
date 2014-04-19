@@ -124,7 +124,15 @@ body {
 	}
 
 	.right {
-	background-image:url("nasa-logo.png");
+		.Nasa {
+				background-image:url("nasa-logo.png");
+		}
+		.USSR {
+			background-image:url("ussr-logo.png");
+		}
+		.ESA {
+			background-image:url("esa-logo.png");
+		}
 	background-repeat: no-repeat;
 	background-position: right bottom;
 	}
